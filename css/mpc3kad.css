@@ -1,0 +1,93 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto; 
+}
+/* css for svg sampler skin */
+#samplerskin {
+  max-width: 550px;
+  position: fixed;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto;
+  z-index: 1;
+}
+/* css styling made up of four blocks to match up with skin. 1 - spacer above screen 2 - screen, 3 - spacer below screen, 4 - table with trigger pads. screen and td sit above the skin, see z-index */
+.spacer1 {
+  height: 129px;
+  display: block;
+  margin: auto;
+}
+#screen {
+  background: black;
+  position: fixed;
+  display: block;
+  height: 136px;
+  width: 394px;
+  font-size: 0.8em;
+  display: block;
+  margin: auto;
+  font-family: andale mono, monospace;
+  color: turquoise;
+  text-align: center;
+  white-space: pre-line;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto;
+  z-index: 2;
+}
+.spacer2 {
+  
+  display: block;
+  height: 219px;
+  display: block;
+  margin: auto;
+}
+
+table {
+  position: relative;
+  width: 360px;
+  height: 330px;
+  table-layout: fixed;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+td {
+  position: relative;
+  margin-left: 50px;
+}
+td:after {
+  content: "";
+  display: block;
+}
+td div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0em;
+  width: 88px;
+  height:88px;
+  z-index: 2;
+  margin-left: 14px;
+}
+audio {
+  display: none;
+}
+input {
+  display: none;
+}
+div {
+  font-weight: 700;
+}
+input[type="file"] {
+  display: none;
+}
+* {
+  font-family: andale mono, monospace;
+}
