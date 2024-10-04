@@ -13,7 +13,6 @@
   margin-inline: auto;
   z-index: 1;
 }
-/* css styling made up of four blocks to match up with skin. 1 - spacer above screen 2 - screen, 3 - spacer below screen, 4 - table with trigger pads. screen and td sit above the skin, see z-index */
 .spacer1 {
   height: 129px;
   display: block;
@@ -28,7 +27,6 @@
   min-width: 394px;
   max-width: 394px;
   font-size: 0.8em;
-  display: block;
   margin: auto;
   font-family: andale mono, monospace;
   color: turquoise;
@@ -42,7 +40,6 @@
 .spacer2 {
   display: block;
   height: 219px;
-  display: block;
   margin: auto;
 }
 .triggerpad {
