@@ -1,13 +1,15 @@
 .container {
   max-width: 960px;
-  margin: 0 auto; 
+  margin: 0 auto;
+  position: fixed;
 }
 /* css for svg sampler skin */
 #samplerskin {
   max-width: 550px;
+  min-width: 550px;
   position: fixed;
-  left: 0; 
-  right: 0; 
+  left: 0;
+  right: 0;
   margin-inline: auto;
   z-index: 1;
 }
@@ -23,6 +25,8 @@
   display: block;
   height: 136px;
   width: 394px;
+  min-width: 394px;
+  max-width: 394px;
   font-size: 0.8em;
   display: block;
   margin: auto;
@@ -30,19 +34,22 @@
   color: turquoise;
   text-align: center;
   white-space: pre-line;
-  left: 0; 
-  right: 0; 
+  left: 0;
+  right: 0;
   margin-inline: auto;
   z-index: 2;
 }
 .spacer2 {
-  
   display: block;
   height: 219px;
   display: block;
   margin: auto;
 }
-
+.triggerpad {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 table {
   position: relative;
   width: 360px;
@@ -72,9 +79,9 @@ td div {
   text-align: center;
   font-size: 0em;
   width: 88px;
-  height:88px;
+  height: 88px;
   z-index: 2;
-  margin-left: 14px;
+  margin-left: 8px;
 }
 audio {
   display: none;
