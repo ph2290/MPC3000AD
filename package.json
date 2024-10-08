@@ -1,0 +1,19 @@
+{
+  "name": "MPC3000AD"
+}
+{
+  "version": "1.0.0."
+}
+{
+  "description": "Web App Sampler of Future Sounds"
+}
+{
+  "license": "MIT",
+}
+{
+  "author": {
+    "name": "Peter Humphrey",
+    "email": "peter@jigsawforesight.com",
+    "url": "http://www.mpc3000ad.com"
+  }
+}
