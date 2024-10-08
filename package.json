@@ -15,12 +15,16 @@
     "name": "Peter Humphrey",
     "email": "peter@jigsawforesight.com",
     "url": "http://www.mpc3000ad.com"
-  }
+	}
 }
+{
 "repository": {
 	"type": "git",
 	"url": "https://github.com/ph2290/MPC3000AD"
+	}
 }
+{
 "dependencies": {
 	"url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+	}
 }
