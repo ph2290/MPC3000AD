@@ -1,3 +1,11 @@
+console.log("Script loaded"); // Check if the script runs
+
+$(document).ready(function() {
+    console.log("Document is ready"); // Check if the DOM is fully loaded
+
+    // Your existing code
+});
+
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
 $("td div").on("mousedown touchstart", function (e) {
