@@ -70,7 +70,7 @@ td div {
   bottom: 0;
   left: 0;
   right: 0;
-  background: blue;
+  background: transparent;
   border-radius: 5px;
   text-align: center;
   font-size: 0em;
