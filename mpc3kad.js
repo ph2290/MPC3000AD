@@ -4,7 +4,6 @@ $(document).ready(function() {
     console.log("Document is ready"); // Check if the DOM is fully loaded
 
     // Your existing code
-});
 
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
