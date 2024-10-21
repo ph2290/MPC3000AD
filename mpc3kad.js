@@ -1,35 +1,26 @@
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+$(document).ready(function() {
+    console.log("Script loaded"); // Check if the script runs
 
-$("td div").on("mousedown touchstart", function (e) {
-  e.stopPropagation();
-  e.preventDefault();
-  var i = parseInt($(this).parent().text()) - 1;
-  var audioElements = $("audio");
+    let currentAudio = null; // Variable to keep track of the currently playing audio
 
-  if (i >= 0 && i < audioElements.length) {
-    var audio = audioElements.eq(i).get(0);
-    audio.currentTime = 0;
-    audio.play();
-    $(this).css("background", "transparent");
-  }
-});
+    $(".trigger").on("click", function() {
+        // Get the audio URL and text from data attributes
+        var audioUrl = $(this).data("audio");
+        var textToDisplay = $(this).data("text");
 
-$("td div").on("mouseup touchend", function () {
-  $(this).css("background", "transparent");
-});
+        // Update the text in the screen div
+        $("#screen").text(textToDisplay);
 
-$("input").each(function (index, element) {
-  $(this).on("change", function (e) {
-    var target = e.currentTarget;
-    var file = target.files[0];
-    
-    if (file) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        $("audio").eq(index).attr("src", e.target.result);
-        $("td div").eq(index).css("background", "transparent");
-      };
-      reader.readAsDataURL(file);
-    }
-  });
+        // Stop the currently playing audio if there is one
+        if (currentAudio) {
+            currentAudio.pause(); // Pause the current audio
+            currentAudio.currentTime = 0; // Reset time to the beginning
+        }
+
+        // Create a new audio element and play the new audio
+        currentAudio = new Audio(audioUrl);
+        currentAudio.play().catch(function(error) {
+            console.error("Playback failed:", error);
+        });
+    });
 });
