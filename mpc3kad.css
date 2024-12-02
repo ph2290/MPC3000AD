@@ -1,7 +1,8 @@
 video {
-  margin: 0 auto;
   position: absolute;
-  min-width: 100%;
+  top: 0;
+  left: 0;
+  min-width: 968px;
   min-height: 100%;
   z-index:-100;
 }
