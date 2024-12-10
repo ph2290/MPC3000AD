@@ -78,7 +78,7 @@ table {
 }
 td {
   position: relative;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 td:after {
   content: "";
