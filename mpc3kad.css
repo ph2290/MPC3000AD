@@ -50,7 +50,6 @@ video {
   color: turquoise;
   text-align: center;
   white-space: pre-line;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   padding: 10px;
   border-radius: 5px;
 }
@@ -64,7 +63,7 @@ video {
 }
 
 table {
-  width: 100%;
+  width: 700%;
   max-width: 400px;
   margin: 0 auto;
   table-layout: fixed;
@@ -76,7 +75,6 @@ td {
 
 button {
   background: transparent;
-  border: 2px solid turquoise;
   border-radius: 5px;
   text-align: center;
   font-size: 0em;
