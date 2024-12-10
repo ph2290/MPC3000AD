@@ -22,14 +22,15 @@ video {
   z-index: -100; /* Keeps the video in the background */
 }
 .container {
-  max-width: 960px;
-  margin: 3% auto;
-  position: fixed;
+  position: relative; /* Relative positioning for absolute alignment */
+  width: 550px; /* Match sampler skin width */
+  height: auto; /* Let the height adapt */
+  margin: 0 auto; /* Center on the page */
 }
 /* css for svg sampler skin */
 #samplerskin {
-  max-width: 550px;
-  position: fixed;
+  width: 100%;
+  position: relative;
   left: 0;
   right: 0;
   margin-inline: auto;
