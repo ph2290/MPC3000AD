@@ -22,15 +22,14 @@ video {
   z-index: -100; /* Keeps the video in the background */
 }
 .container {
-  width: 550px;
-  position: relative;
-  height: auto; /* Let the height adapt */
-  margin: 0 auto; /* Center on the page */
+  max-width: 960px;
+  margin: 3% auto;
+  position: fixed;
 }
 /* css for svg sampler skin */
 #samplerskin {
-  width: 100%;
-  position: relative;
+  max-width: 550px;
+  position: fixed;
   left: 0;
   right: 0;
   margin-inline: auto;
@@ -41,7 +40,7 @@ video {
   margin: auto;
 }
 #screen {
-  position: absolute;
+  position: fixed;
   display: block;
   height: 136px;
   width: 394px;
