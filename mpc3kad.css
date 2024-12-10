@@ -14,8 +14,11 @@ video {
 }
 .container {
   max-width: 960px;
-  margin: 5% auto;
-  position: fixed;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 /* css for svg sampler skin */
 #samplerskin {
