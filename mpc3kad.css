@@ -62,7 +62,7 @@ video {
 }
 #button7 {
   position: absolute;
-  top: 0%;
+  top: 0.3%;
   left: 0%;
   width: 26.7%;
   height: 28%;
@@ -169,7 +169,11 @@ input {
   #screen {
     font-size: 0.8em;
   }
-
+  
+  .container {
+    width: 400px;
+  }
+  
   button {
     font-size: 0.7em;
   }
