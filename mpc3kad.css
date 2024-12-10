@@ -131,7 +131,11 @@ input {
   #screen {
     font-size: 0.8em;
   }
-
+  
+  .container {
+  width: 400px;
+  }
+  
   button {
     font-size: 0.7em;
   }
