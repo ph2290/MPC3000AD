@@ -41,7 +41,7 @@ video {
   margin: auto;
 }
 #screen {
-  position: fixed;
+  position: absolute;
   display: block;
   height: 136px;
   width: 394px;
@@ -64,8 +64,16 @@ video {
   margin: auto;
 }
 .triggerpad {
-  position: fixed;
+  position: absolute;
   width: 100%;
+  top: 0; /* Start at the top of the sampler skin */
+  left: 0;
+  width: 100%; /* Match sampler skin width */
+  height: 100%; /* Match sampler skin height */
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow multiple rows if needed */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 table {
   position: relative;
