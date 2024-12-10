@@ -5,12 +5,14 @@
 }
 /* Video Background */
 video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: -100; /* Ensure video stays in the background */
+  position: fixed; /* Ensures the video stays in the background */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: cover; /* Ensures the video covers the screen without distortion */
+  z-index: -100; /* Keeps the video in the background */
 }
 .container {
   max-width: 960px;
