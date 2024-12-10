@@ -14,13 +14,12 @@ video {
 }
 .container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 20% auto;
   position: fixed;
 }
 /* css for svg sampler skin */
 #samplerskin {
   max-width: 550px;
-  min-width: 550px;
   position: fixed;
   left: 0;
   right: 0;
@@ -36,7 +35,6 @@ video {
   display: block;
   height: 136px;
   width: 394px;
-  min-width: 394px;
   max-width: 394px;
   font-size: 0.8em;
   margin: auto;
