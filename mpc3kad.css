@@ -33,10 +33,9 @@ video {
   top: 50%; /* Center vertically */
   left: 50%;
   transform: translate(-50%, -50%); /* Center properly */
-  width: 80%; /* Adjust width for responsiveness */
+  width: 100%; /* Adjust width for responsiveness */
   max-width: 550px;
   z-index: 1; /* Below trigger pad and screen */
-  opacity: 0.6; /* Optional: Slight transparency for visual effect */
 }
 
 /* Screen Display */
