@@ -168,7 +168,7 @@ input {
 
 @media screen and (max-width: 480px) {
   #screen {
-    font-size: 0.3em;
+    font-size: 0.2em;
   }
 
   #button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9 {
