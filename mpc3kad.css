@@ -21,30 +21,26 @@ video {
   object-fit: cover; /* Ensures the video covers the screen without distortion */
   z-index: -100; /* Keeps the video in the background */
 }
+/* container for entire sampler app */
 .container {
-  max-width: 960px;
-  margin: 3% auto;
-  position: fixed;
+  width: 550px;
+  position: relative;
+  height: auto; /* Let the height adapt */
+  margin: 10% auto; /* Center on the page */
 }
 /* css for svg sampler skin */
 #samplerskin {
-  max-width: 550px;
-  position: fixed;
+  width: 100%;
+  position: relative;
   left: 0;
   right: 0;
   margin-inline: auto;
-}
-.spacer1 {
-  height: 129px;
-  display: block;
-  margin: auto;
+  z-index: -1;
 }
 #screen {
-  position: fixed;
-  display: block;
-  height: 136px;
-  width: 394px;
-  max-width: 394px;
+  position: absolute;
+  top: 18%;
+  width: 72%;
   font-size: 0.8em;
   margin: auto;
   font-family: andale mono, monospace;
@@ -55,34 +51,77 @@ video {
   left: 0;
   right: 0;
   margin-inline: auto;
-
-}
-.spacer2 {
-  display: block;
-  height: 219px;
-  margin: auto;
 }
 .triggerpad {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  top: 47.5%; 
+  left: 20.5%;
+  width: 59%;
+  height: 42.5%;
+  display: flex;
 }
-table {
-  position: relative;
-  width: 360px;
-  height: 335px;
-  table-layout: fixed;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
+#button7 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 26.5%;
+  height: 28.5%;
 }
-td {
-  position: relative;
-  margin-left: 25%;
+#button8 {
+  position: absolute;
+  top: 0%;
+  left: 36.9%;
+  width: 26.5%;
+  height: 28.5%;
 }
-td:after {
-  content: "";
-  display: block;
+#button9 {
+  position: absolute;
+  top: 0%;
+  left: 73.3%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button4 {
+  position: absolute;
+  top: 36%;
+  left: 0%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button5 {
+  position: absolute;
+  top: 36%;
+  left: 36.9%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button6 {
+  position: absolute;
+  top: 36%;
+  left: 73.3%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button1 {
+  position: absolute;
+  top: 71%;
+  left: 0%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button2 {
+  position: absolute;
+  top: 71%;
+  left: 36.5%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button3 {
+  position: absolute;
+  top: 71%;
+  left: 73.3%;
+  width: 26.5%;
+  height: 28.5%;
 }
 button {
   position: absolute;
@@ -91,13 +130,12 @@ button {
   left: 0;
   right: 0;
   background: transparent;
-  border-radius: 3px;
+  border-radius: 0px;
   border-color: transparent;
-  text-align: center;
   font-size: 0em;
-  width: 88px;
-  height: 88px;
-  margin-left: 8px;
+  width: 100%;
+  height: 100%;
+
 }
 audio {
 display: none;
@@ -131,11 +169,7 @@ input {
   #screen {
     font-size: 0.8em;
   }
-  
-  .container {
-  width: 400px;
-  }
-  
+
   button {
     font-size: 0.7em;
   }
