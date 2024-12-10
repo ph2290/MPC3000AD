@@ -42,7 +42,7 @@ video {
   position: absolute;
   top: 18%;
   width: 72%;
-  font-size: 0.8em;
+  font-size: clamp(0.8125rem, 0.8125rem + 0vw, 0.8125rem);
   margin: auto;
   font-family: andale mono, monospace;
   font-weight: bold;
