@@ -22,7 +22,7 @@ video {
   z-index: -100; /* Keeps the video in the background */
 }
 .container {
-  max-width: 550px;
+  width: 550px;
   margin: 3% auto;
   position: relative;
 }
