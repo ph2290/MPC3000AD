@@ -8,7 +8,7 @@ html, body {
   padding: 0; /* Remove default padding */
   height: 100%; /* Ensure body takes up the full height */
   width: 100%; /* Ensure body takes up the full width */
-  overflow: hidden; /* Prevent scrolling if the video overflows */
+  overflow-x: hidden; /* Prevent scrolling if the video overflows */
 }
 /* Video Background */
 video {
@@ -23,7 +23,8 @@ video {
 }
 /* container for entire sampler app */
 .container {
-  width: 550px;
+  width: 80%;
+  max-width: 550px;
   position: relative;
   height: auto; /* Let the height adapt */
   margin: 5% auto; /* Center on the page */
@@ -41,7 +42,7 @@ video {
   position: absolute;
   top: 18%;
   width: 72%;
-  font-size: 0.8em;
+  font-size: clamp(0.5em, 1.6vw, 1em);
   margin: auto;
   font-family: andale mono, monospace;
   font-weight: bold;
