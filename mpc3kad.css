@@ -8,7 +8,7 @@ html, body {
   padding: 0; /* Remove default padding */
   height: 100%; /* Ensure body takes up the full height */
   width: 100%; /* Ensure body takes up the full width */
-  overflow-x: hidden; /* Prevent scrolling if the video overflows */
+  overflow: hidden; /* Prevent scrolling if the video overflows */
 }
 /* Video Background */
 video {
@@ -176,7 +176,7 @@ input {
   }
 
   .triggerpad {
-    width: 40%;
+    width: 60%;
   }
   
   button {
