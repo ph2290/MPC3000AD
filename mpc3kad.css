@@ -3,6 +3,13 @@
   font-family: andale mono, monospace;
   font-weight: bold;
 }
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure body takes up the full height */
+  width: 100%; /* Ensure body takes up the full width */
+  overflow: hidden; /* Prevent scrolling if the video overflows */
+}
 /* Video Background */
 video {
   position: fixed; /* Ensures the video stays in the background */
