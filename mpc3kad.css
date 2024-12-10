@@ -1,105 +1,118 @@
+/* General Reset */
+* {
+  font-family: andale mono, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Video Background */
 video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 968px;
-  min-height: 100%;
-  z-index:-100;
+  width: 100%;
+  height: auto;
+  z-index: -100;
 }
+
+/* Main Container */
 .container {
   max-width: 960px;
   margin: 0 auto;
-  position: fixed;
+  position: relative; /* Changed from fixed */
+  padding: 10px;
 }
-/* css for svg sampler skin */
+
+/* SVG Sampler Skin */
 #samplerskin {
-  max-width: 550px;
-  min-width: 550px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
+  max-width: 90%; /* Changed from fixed size */
+  min-width: 320px; /* Fallback for very small screens */
+  margin: 0 auto;
+  position: relative;
 }
-.spacer1 {
-  height: 129px;
+
+/* Spacers */
+.spacer1, .spacer2 {
+  height: 10vh; /* Use viewport height for spacing */
   display: block;
-  margin: auto;
 }
+
+/* Screen Display */
 #screen {
-  position: fixed;
+  position: relative; /* Changed from fixed */
   display: block;
-  height: 136px;
-  width: 394px;
-  min-width: 394px;
-  max-width: 394px;
-  font-size: 0.8em;
-  margin: auto;
-  font-family: andale mono, monospace;
-  font-weight: bold;
+  width: 80%; /* Percentage-based width */
+  max-width: 394px; /* Keep max-width for larger screens */
+  font-size: 1em; /* Scales with screen size */
+  margin: 20px auto;
   color: turquoise;
   text-align: center;
   white-space: pre-line;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
+}
 
-}
-.spacer2 {
-  display: block;
-  height: 219px;
-  margin: auto;
-}
+/* Trigger Pad */
 .triggerpad {
-  position: fixed;
+  position: relative; /* Changed from fixed */
   width: 100%;
+  margin: 20px auto;
 }
+
 table {
-  position: relative;
-  width: 360px;
-  height: 335px;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Limit for larger screens */
+  margin: 0 auto;
   table-layout: fixed;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
 }
+
 td {
   position: relative;
-  margin-left: 50px;
-}
-td:after {
-  content: "";
-  display: block;
-}
-button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: transparent;
-  border-radius: 3px;
-  border-color: transparent;
-  text-align: center;
-  font-size: 0em;
-  width: 88px;
-  height: 88px;
-  margin-left: 6.5px;
-}
-audio {
-display: none;
-}
-input {
-  display: none;
-}
-.trigger {
-            cursor: pointer; 
-}
-.trigger:hover {
-            background-color: black;
-            opacity: 10%;
-        }
-* {
-  font-family: andale mono, monospace;
+  padding: 5px; /* Added padding for spacing */
 }
 
+/* Buttons */
+button {
+  background: transparent;
+  border: 2px solid turquoise;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0em;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Maintain square shape */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  opacity: 0.8;
+}
+
+/* Hide unused elements */
+audio, input {
+  display: none;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  #samplerskin {
+    max-width: 80%;
+  }
+
+  #screen {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #screen {
+    font-size: 0.8em;
+  }
+
+  button {
+    font-size: 0.7em;
+  }
+}
