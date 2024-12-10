@@ -14,7 +14,7 @@ video {
 }
 .container {
   max-width: 960px;
-  margin: 20% auto;
+  margin: 10% auto;
   position: fixed;
 }
 /* css for svg sampler skin */
