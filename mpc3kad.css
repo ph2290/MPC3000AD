@@ -13,64 +13,68 @@ video {
   left: 0;
   width: 100%;
   height: auto;
-  z-index: -100;
+  z-index: -100; /* Ensure video stays in the background */
 }
 
 /* Main Container */
 .container {
   max-width: 960px;
   margin: 0 auto;
-  position: relative; /* Changed from fixed */
+  position: relative;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* SVG Sampler Skin */
 #samplerskin {
-  max-width: 90%; /* Changed from fixed size */
-  min-width: 320px; /* Fallback for very small screens */
-  margin: 0 auto;
-  position: relative;
-}
-
-/* Spacers */
-.spacer1, .spacer2 {
-  height: 10vh; /* Use viewport height for spacing */
-  display: block;
+  position: absolute; /* Positioned beneath other elements */
+  top: 50%; /* Center vertically */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center properly */
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 550px;
+  z-index: 1; /* Below trigger pad and screen */
+  opacity: 0.6; /* Optional: Slight transparency for visual effect */
 }
 
 /* Screen Display */
 #screen {
-  position: relative; /* Changed from fixed */
+  position: relative;
+  z-index: 2; /* Above the SVG sampler skin */
   display: block;
-  width: 80%; /* Percentage-based width */
-  max-width: 394px; /* Keep max-width for larger screens */
-  font-size: 1em; /* Scales with screen size */
+  width: 80%;
+  max-width: 394px;
+  font-size: 1em;
   margin: 20px auto;
   color: turquoise;
   text-align: center;
   white-space: pre-line;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Trigger Pad */
 .triggerpad {
-  position: relative; /* Changed from fixed */
+  position: relative;
+  z-index: 2; /* Above the SVG sampler skin */
   width: 100%;
   margin: 20px auto;
 }
 
 table {
-  width: 100%; /* Full width */
-  max-width: 400px; /* Limit for larger screens */
+  width: 100%;
+  max-width: 400px;
   margin: 0 auto;
   table-layout: fixed;
 }
 
 td {
-  position: relative;
-  padding: 5px; /* Added padding for spacing */
+  padding: 5px;
 }
 
-/* Buttons */
 button {
   background: transparent;
   border: 2px solid turquoise;
@@ -87,15 +91,16 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Hide unused elements */
-audio, input {
-  display: none;
+/* Spacers */
+.spacer1, .spacer2 {
+  height: 5vh; /* Use viewport height for spacing */
+  display: block;
 }
 
 /* Responsive Media Queries */
 @media screen and (max-width: 768px) {
   #samplerskin {
-    max-width: 80%;
+    width: 70%;
   }
 
   #screen {
@@ -108,6 +113,10 @@ audio, input {
 }
 
 @media screen and (max-width: 480px) {
+  #samplerskin {
+    width: 90%;
+  }
+
   #screen {
     font-size: 0.8em;
   }
