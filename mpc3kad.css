@@ -28,7 +28,6 @@ video {
   position: relative;
   height: auto; /* Let the height adapt */
   margin: 5% auto; /* Center on the page */
-  aspect-ratio: 1 / 1;
 }
 /* css for svg sampler skin */
 #samplerskin {
