@@ -2,11 +2,9 @@
 * {
   font-family: andale mono, monospace;
   font-weight: bold;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 /* Video Background */
 video {
   position: absolute;
@@ -109,6 +107,27 @@ input {
             background-color: black;
             opacity: 10%;
         }
-* {
-  font-family: andale mono, monospace;
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  #samplerskin {
+    max-width: 80%;
+  }
+
+  #screen {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #screen {
+    font-size: 0.8em;
+  }
+
+  button {
+    font-size: 0.7em;
+  }
 }
