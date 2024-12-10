@@ -1,6 +1,7 @@
 /* General Reset */
 * {
   font-family: andale mono, monospace;
+  font-weight: bold;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,110 +16,99 @@ video {
   height: auto;
   z-index: -100; /* Ensure video stays in the background */
 }
-
-/* Main Container */
 .container {
   max-width: 960px;
   margin: 0 auto;
-  position: relative;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
 }
-
-/* SVG Sampler Skin */
+/* css for svg sampler skin */
 #samplerskin {
-  position: absolute; /* Positioned beneath other elements */
-  top: 50%; /* Center vertically */
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center properly */
-  width: 100%; /* Adjust width for responsiveness */
   max-width: 550px;
-  z-index: 1; /* Below trigger pad and screen */
+  min-width: 550px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
 }
-
-/* Screen Display */
-#screen {
-  position: relative;
-  z-index: 2; /* Above the SVG sampler skin */
+.spacer1 {
+  height: 129px;
   display: block;
-  width: 80%;
+  margin: auto;
+}
+#screen {
+  position: fixed;
+  display: block;
+  height: 136px;
+  width: 394px;
+  min-width: 394px;
   max-width: 394px;
-  font-size: 1em;
-  margin: 20px auto;
+  font-size: 0.8em;
+  margin: auto;
+  font-family: andale mono, monospace;
+  font-weight: bold;
   color: turquoise;
   text-align: center;
   white-space: pre-line;
-  padding: 10px;
-  border-radius: 5px;
-}
+  left: 0;
+  right: 0;
+  margin-inline: auto;
 
-/* Trigger Pad */
+}
+.spacer2 {
+  display: block;
+  height: 219px;
+  margin: auto;
+}
 .triggerpad {
-  position: relative;
-  z-index: 2; /* Above the SVG sampler skin */
+  position: fixed;
   width: 100%;
-  margin: 20px auto;
 }
-
 table {
-  width: 700%;
-  max-width: 400px;
-  margin: 0 auto;
+  position: relative;
+  width: 360px;
+  height: 335px;
   table-layout: fixed;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 td {
-  padding: 5px;
+  position: relative;
+  margin-left: 50px;
 }
-
-button {
-  background: transparent;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 0em;
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Maintain square shape */
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: black;
-  opacity: 0.8;
-}
-
-/* Spacers */
-.spacer1, .spacer2 {
-  height: 5vh; /* Use viewport height for spacing */
+td:after {
+  content: "";
   display: block;
 }
-
-/* Responsive Media Queries */
-@media screen and (max-width: 768px) {
-  #samplerskin {
-    width: 70%;
-  }
-
-  #screen {
-    font-size: 0.9em;
-  }
-
-  button {
-    font-size: 0.8em;
-  }
+button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 3px;
+  border-color: transparent;
+  text-align: center;
+  font-size: 0em;
+  width: 88px;
+  height: 88px;
+  margin-left: 6.5px;
 }
-
-@media screen and (max-width: 480px) {
-  #samplerskin {
-    width: 90%;
-  }
-
-  #screen {
-    font-size: 0.8em;
-  }
-
-  button {
-    font-size: 0.7em;
-  }
+audio {
+display: none;
+}
+input {
+  display: none;
+}
+.trigger {
+            cursor: pointer; 
+}
+.trigger:hover {
+            background-color: black;
+            opacity: 10%;
+        }
+* {
+  font-family: andale mono, monospace;
 }
