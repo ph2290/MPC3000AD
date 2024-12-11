@@ -4,6 +4,7 @@
   font-weight: bold;
 }
 html, body {
+  font-size: 13px;
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   height: 100%; /* Ensure body takes up the full height */
@@ -42,7 +43,7 @@ video {
   position: absolute;
   top: 18%;
   width: 72%;
-  font-size: 13px;
+  font-size: 1em;
   margin: auto;
   font-family: andale mono, monospace;
   font-weight: bold;
@@ -64,64 +65,64 @@ video {
 #button7 {
   position: absolute;
   top: 0.3%;
-  left: 0%;
-  width: 26.7%;
+  left: 10%;
+  width: 21.5%;
   height: 28%;
 }
 #button8 {
   position: absolute;
   top: 0%;
-  left: 36.9%;
-  width: 26.5%;
+  left: 39%;
+  width: 21.5%;
   height: 28.3%;
 }
 #button9 {
   position: absolute;
   top: 0%;
-  left: 73.3%;
-  width: 26.5%;
+  left: 68.9%;
+  width: 21.5%;
   height: 28.3%;
 }
 #button4 {
   position: absolute;
   top: 36%;
-  left: 0%;
-  width: 26.5%;
+  left: 10%;
+  width: 21.5%;
   height: 28.5%;
 }
 #button5 {
   position: absolute;
   top: 36%;
-  left: 36.9%;
-  width: 26.5%;
+  left: 39%;
+  width: 21.5%;
   height: 28.5%;
 }
 #button6 {
   position: absolute;
   top: 36%;
-  left: 73.3%;
-  width: 26.5%;
+  left: 68.9%;
+  width: 21.5%;
   height: 28.5%;
 }
 #button1 {
   position: absolute;
   top: 71%;
-  left: 0%;
-  width: 26.5%;
+  left: 10%;
+  width: 21.5%;
   height: 28.5%;
 }
 #button2 {
   position: absolute;
   top: 71%;
-  left: 36.5%;
-  width: 26.5%;
+  left: 39%;
+  width: 21.5%;
   height: 28.5%;
 }
 #button3 {
   position: absolute;
   top: 71%;
-  left: 73.3%;
-  width: 26.5%;
+  left: 68.9%;
+  width: 21.5%;
   height: 28.5%;
 }
 button {
@@ -168,7 +169,7 @@ input {
 
 @media screen and (max-width: 480px) {
   #screen {
-    font-size: 6px;
+    font-size: 0.2em;
   }
   
   .container {
