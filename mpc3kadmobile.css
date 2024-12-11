@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+  font-family: andale mono, monospace;
+  font-weight: bold;
+}
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure body takes up the full height */
+  width: 100%; /* Ensure body takes up the full width */
+  overflow: hidden; /* Prevent scrolling if the video overflows */
+}
+/* Video Background */
+video {
+  position: fixed; /* Ensures the video stays in the background */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: cover; /* Ensures the video covers the screen without distortion */
+  z-index: -100; /* Keeps the video in the background */
+}
+/* container for entire sampler app */
+.container {
+  width: 80%;
+  max-width: 550px;
+  position: relative;
+  height: auto; /* Let the height adapt */
+  margin: 5% auto; /* Center on the page */
+}
+/* css for svg sampler skin */
+#samplerskin {
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  z-index: -1;
+}
+#screen {
+  position: absolute;
+  top: 18%;
+  width: 72%;
+  font-size: 13px;
+  margin: auto;
+  font-family: andale mono, monospace;
+  font-weight: bold;
+  color: turquoise;
+  text-align: center;
+  white-space: pre-line;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+.triggerpad {
+  position: absolute;
+  top: 47.5%; 
+  left: 20.5%;
+  width: 59%;
+  height: 42.5%;
+  display: flex;
+}
+#button7 {
+  position: absolute;
+  top: 0.3%;
+  left: 0%;
+  width: 26.7%;
+  height: 28%;
+}
+#button8 {
+  position: absolute;
+  top: 0%;
+  left: 36.9%;
+  width: 26.5%;
+  height: 28.3%;
+}
+#button9 {
+  position: absolute;
+  top: 0%;
+  left: 73.3%;
+  width: 26.5%;
+  height: 28.3%;
+}
+#button4 {
+  position: absolute;
+  top: 36%;
+  left: 0%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button5 {
+  position: absolute;
+  top: 36%;
+  left: 36.9%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button6 {
+  position: absolute;
+  top: 36%;
+  left: 73.3%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button1 {
+  position: absolute;
+  top: 71%;
+  left: 0%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button2 {
+  position: absolute;
+  top: 71%;
+  left: 36.5%;
+  width: 26.5%;
+  height: 28.5%;
+}
+#button3 {
+  position: absolute;
+  top: 71%;
+  left: 73.3%;
+  width: 26.5%;
+  height: 28.5%;
+}
+button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 0px;
+  border-color: transparent;
+  font-size: 0em;
+  width: 100%;
+  height: 100%;
+
+}
+audio {
+display: none;
+}
+input {
+  display: none;
+}
+.trigger {
+            cursor: pointer; 
+}
+.trigger:hover {
+            background-color: black;
+            opacity: 10%;
+        }
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  #samplerskin {
+    max-width: 80%;
+  }
+
+  #screen {
+    font-size: 0.4em;
+  }
+
+  button {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #screen {
+    font-size: 6px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+
+  .triggerpad {
+    width: 60%;
+  }
+  
+  button {
+    font-size: 0.7em;
+  }
+}
