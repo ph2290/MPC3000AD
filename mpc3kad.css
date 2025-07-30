@@ -50,8 +50,3 @@ right:0;
 background: rgba(0, 0, 0, .6); 
 position: absolute;
 }
-@media only screen and (max-width: 1300px) {
-  #mySidebar {
-    display: none;
-  }
-}
