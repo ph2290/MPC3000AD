@@ -32,8 +32,8 @@ svg {
             cursor: pointer; 
 }
 .trigger:hover {
-            fill: #111CCB;
-            opacity: 60%;
+            fill: #bc3c4c;
+            opacity: 70%;
 }
 p {
   font-family: Helvetica, Arial, sans-serif;
